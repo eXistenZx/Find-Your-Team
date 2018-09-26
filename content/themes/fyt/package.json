@@ -1,0 +1,32 @@
+{
+  "name": "brunch-app",
+  "description": "Brunch.io application",
+  "private": true,
+  "author": "Brunch",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^4.1.0",
+    "jarallax": "^1.10.3",
+    "jquery": "^3.3.1",
+    "jquery.scrollex": "^0.2.1",
+    "normalize.css": "^8.0.0",
+    "popper.js": "^1.14.3",
+    "hscroll" : "^1.2.2"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "browser-sync-brunch": "0.0.9",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "copycat-brunch": "^1.1.0",
+    "pleeease-brunch": "^3.0.0",
+    "sass-brunch": "^2.10.4",
+    "uglify-js-brunch": "^2"
+  }
+}

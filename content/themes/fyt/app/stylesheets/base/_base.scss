@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// html, body {
+//   height: 90%;
+// }
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D0DCFF !important;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+// .non-active {
+//   display: none;
+// }

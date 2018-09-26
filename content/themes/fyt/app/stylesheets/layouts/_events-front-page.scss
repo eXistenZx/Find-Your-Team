@@ -1,0 +1,15 @@
+.next-events-front-page {
+  background-color: rgba(255, 255, 255, .2);
+  margin: auto 450px 50px auto;
+}
+
+
+.last-events-front-page {
+  background-color: rgba(255, 255, 255, .2);
+  margin: auto 450px 50px auto;
+  max-height: 400px;
+
+  .container {
+    box-sizing: border-box;
+  }
+}

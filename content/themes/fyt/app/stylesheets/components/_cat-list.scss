@@ -1,0 +1,32 @@
+.cat-list {
+
+  ul {
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  }
+
+  .categories {
+    color: #D0DCFF;
+  }
+
+  .cat-item a {
+    display: block;
+    float:left;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    background-color: #1AFDFF;
+    margin: 2px;
+    font-weight: 700;
+
+    &:hover {
+      background-color: #2599E8;
+    }
+  }
+  input {
+    margin-left: 2px;
+    border: none;
+  }
+}

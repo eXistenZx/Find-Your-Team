@@ -1,0 +1,28 @@
+.login-page-container {
+  margin-top: 10em;
+  position: relative;
+  min-height: 83%;
+
+  & .home-description {
+    margin: 0 2em 0 5em;
+
+  }
+
+  & .home-form-login {
+    padding: 2em;
+    background-color: white;
+
+    #loginform {
+      text-align: center;
+
+        label {
+          display: block;
+        }
+
+        .input {
+          border: 1px solid #ccc;
+        }
+
+    }
+  }
+}

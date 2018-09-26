@@ -1,0 +1,27 @@
+{
+  "name": "Pierre/find-your-team",
+  "authors": [
+    {
+      "name": "eXistenZx",
+      "email": "pierretordjman@orange.fr"
+    }
+    ],
+    "repositories":[
+      {
+        "type":"composer",
+        "url":"https://wpackagist.org"
+      }
+    ],
+    "require": {
+      "johnpbloch/wordpress": "4.9.*",
+      "wpackagist-theme/twentyseventeen": "*"
+    },
+
+    "extra": {
+      "wordpress-install-dir": "wp",
+      "installer-paths": {
+        "content/plugins/{$name}/": ["type:wordpress-plugin"],
+        "content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  }
+}

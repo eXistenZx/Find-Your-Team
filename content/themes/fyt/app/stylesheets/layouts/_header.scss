@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  z-index: 10;
+  border-bottom: 1px solid #1B1D21;
+  background-color: #1AFDFF; // $color-2
+
+  .logo {
+    display: inline-block;
+    width: 200px;
+  }
+  h1 {
+    text-align: center;
+    width: 500px;
+    font-size: 1.8em;
+    display: inline-block;
+    margin: 30px;
+
+  }
+
+  .header-nav {
+    display: inline-block;
+    right: 20px;
+    width: 380px;
+    margin: 30px;
+    color: #1B1D21;
+
+    &-link, a {
+      text-decoration: none;
+      margin-right: 1em;
+      color: #1B1D21;
+      font-weight: 700;
+    }
+  }
+}
