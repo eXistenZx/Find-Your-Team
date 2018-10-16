@@ -1,0 +1,27 @@
+.em-calendar table {
+  border: 3px solid $color-3;
+  font-size: 0.8em;
+  background: $color-1-light;
+  .month_name {
+    color: $color-3;
+  }
+  .days-names{
+    background: $color-1;
+    line-height: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .eventless-pre, .eventless-post {
+    color: $color-3 !important;
+  }
+  .eventful-today {
+    background-color: $color-3 !important;
+    border-radius: 10px;
+  }
+  .eventful {
+    font-weight: 700;
+  }
+  // td {
+  //   border: 1px solid $color-3;
+  // }
+}

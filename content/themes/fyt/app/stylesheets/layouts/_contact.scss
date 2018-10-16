@@ -1,0 +1,111 @@
+.contact-container-logout {
+  margin: 5em auto 7em auto;
+  width: 95%;
+  text-align: center;
+
+  .contact-mail {
+    margin-right: 1em;
+    a {
+      color: $color-text-links;
+      text-decoration: none;
+    }
+  }
+  .contact-phone {
+    margin-right: 1em;
+    a {
+      color: $color-text-links;
+      text-decoration: none;
+    }
+  }
+
+  .contact-mailpost {
+    margin-top: 3em;
+
+    .contact-mailpost-title {
+      font-weight: bold;
+    }
+  }
+}
+
+.contact-container-login {
+  margin: 5em 1em 3em 1em;
+
+  .contact-title {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .contact-form-container {
+    .contact-form {
+      .input-group-prepend {
+        width: 5em;
+
+        .input-group-text {
+          width: 5em;
+        }
+      }
+
+      .contact-submit {
+        width: 100%;
+        text-align: center;
+      }
+
+      .contact-textarea {
+        margin: 3em 0 3em 0;
+      }
+    }
+
+  }
+}
+
+/*---RESPONSIVE---*/
+
+@media (min-width: 768px) {
+  .contact-container-login {
+    width: 80%;
+    margin: 5em auto 5em auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-container-login {
+    width: 70%;
+    margin: 5em auto 34em auto;
+  }
+
+  .contact-container-logout {
+    margin: 5em auto 10em auto;
+    width: 95%;
+    text-align: center;
+
+    .contact-mail {
+      margin-right: 1em;
+      a {
+        color: $color-text-links;
+        text-decoration: none;
+      }
+    }
+    .contact-phone {
+      margin-right: 1em;
+      a {
+        color: $color-text-links;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .contact-container-login {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contact-container-login {
+    width: 40%;
+    margin: 5em auto 32em auto;
+
+  }
+}

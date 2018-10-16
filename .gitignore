@@ -30,6 +30,8 @@ public/
 
 /vendor/
 wp/
-content/plugins
+
 content/themes/twentyseventeen
 wp-config.php
+debug.log
+thumbs.db

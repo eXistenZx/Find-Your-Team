@@ -10,13 +10,15 @@ if (!function_exists('fyt_setup')) {
     // Support des images mise en avant
     add_theme_support('post-thumbnails');
     register_nav_menus([
-    	'primary' => __( 'Menu d\'en-tête', 'fyt' ),
+    	'primary' => __( 'Menu d\'en-tête si visiteur', 'fyt' ),
+        'primary_connected' => __( 'Menu d\'en-tête si connecté', 'fyt'),
     	'sidebar_menu' => __( 'Menu de la sidebar', 'fyt' ),
     	'secondary' => __( 'Menu du pied de page', 'fyt' )
     ]);
   }
 }
 add_action( 'after_setup_theme', 'fyt_setup' );
+
 // Si ma fonction n'existe pas...
 if (!function_exists('fyt_scripts')) {
   // Ajout des css & js au chargement de wp_head()
@@ -39,11 +41,11 @@ if (!function_exists('fyt_scripts')) {
         '1.0');
   }
 }
-  add_action('wp_enqueue_scripts', 'fyt_scripts');
+add_action('wp_enqueue_scripts', 'fyt_scripts');
 
 function enqueue_bootstrap() {
-  wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.css' );
-  // Ces deux lignes ne sont utiles que si vous utilisez les fonctionnalites JavaScript
-  wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.js', 'jquery' );
+    wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.css' );
+    // Ces deux lignes ne sont utiles que si vous utilisez les fonctionnalites JavaScript
+    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.js', 'jquery');
 }
-add_action( 'wp_enqueue_scripts', 'enqueue_bootstrap' );
+add_action( 'wp_enqueue_scripts', 'enqueue_bootstrap');

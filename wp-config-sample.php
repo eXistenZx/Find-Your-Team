@@ -122,11 +122,11 @@ define('NONCE_SALT',       '');
   define('FS_METHOD', 'direct');
 
 
- define( 'WP_CONTENT_URL', 'http://localhost/projet_fusion/find-your-team/content' );
- define( 'WP_CONTENT_DIR', dirname( ABSPATH ) . '/content' );
+  define( 'WP_CONTENT_URL', '' );
+  define( 'WP_CONTENT_DIR', dirname( ABSPATH ) . '/content' );
 
- define('WP_HOME','http://localhost/projet_fusion/find-your-team/');
- define('WP_SITEURL','http://localhost/projet_fusion/find-your-team/wp/');
+  define('WP_HOME','');
+  define('WP_SITEURL','');
 
  /* C’est tout, ne touchez pas à ce qui suit ! */
 

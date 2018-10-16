@@ -1,17 +1,17 @@
-@charset "utf-8";
-
-// html, body {
-//   height: 90%;
-// }
 html {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #D0DCFF !important;
+  font-family: $font_nunito;
+  background-color: $color-bg-light;
   margin: 0;
   padding: 0;
-  position: relative;
+  min-height: 80%;
+
+  .container-fluid {
+    padding: 0;
+  }
 }
 
 *,
@@ -23,6 +23,6 @@ body {
 
 
 
-// .non-active {
-//   display: none;
-// }
+.non-active {
+  display: none;
+}

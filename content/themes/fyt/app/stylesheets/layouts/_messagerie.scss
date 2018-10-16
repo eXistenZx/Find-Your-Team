@@ -1,0 +1,104 @@
+/**
+ * Typographies Google Maggle !
+ */
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Ubuntu');
+
+.title-chat {
+  font-family: "Cinzel Decorative", cursive;
+  margin-top: 5em;
+  text-align: center;
+
+}
+
+.inpt-chat, .btn-chat {
+  font-family: Ubuntu, sans-serif;
+  padding: 0.5em;
+}
+
+.form-chat {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.inpt-chat {
+  margin-right: 10px;
+  width: 79%;
+  background-color: $color-metal;
+}
+
+#user_count {
+  width: 20%;
+  background-color: $color-1-light;
+}
+
+#content {
+  width: 79%;
+}
+
+.btn-chat[type="submit"]{
+  width: 12%;
+  border-radius: 50%;
+  background-color: $color-1-light;
+
+}
+
+.wrapper {
+  width: 400px;
+  height: 750px;
+  margin: 2em auto;
+  border: 3px solid $color-metal;
+  border-radius: 40px;
+  background-color: $color-black;
+
+    &:before {
+      content: 'O';
+      display: block;
+      height: 60px;
+      line-height: 60px;
+      color: #2C75FF;
+      text-align: center;
+      font-family: Varela Round;
+    }
+
+    &:after {
+      content: 'O';
+      display: block;
+      height: 75px;
+      line-height: 75px;
+      color: lighten(#2C75FF, 10);
+      text-align: center;
+      font-family: Varela Round;
+      font-size: 65px;
+    }
+}
+
+.screen {
+  margin: 0 1em;
+  border: 1px solid #3A8EBA;
+  border-radius: 4px;
+  height: 80%;
+  background-color: white;
+  padding: 0.4em;
+}
+
+.chat-text {
+  margin-top: 6px;
+}
+
+
+.display {
+  height: 92%;
+
+  div {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.chat-text, .display {
+  h2 {
+    border-bottom: 1px dotted $color-black;
+  }
+}

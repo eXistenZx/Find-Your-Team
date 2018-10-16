@@ -1,28 +1,92 @@
 .login-page-container {
-  margin-top: 10em;
+  margin-top: 3em;
+  margin-bottom: 2em;
   position: relative;
-  min-height: 83%;
+  min-height: 80vh;
+  max-width: 98%;
+  padding: 0.5em;
 
   & .home-description {
-    margin: 0 2em 0 5em;
-
+    margin: 0 1em 0 0;
+    padding: 2em;
+    font-size:0.8em;
   }
 
   & .home-form-login {
     padding: 2em;
-    background-color: white;
+    background-color: $color-1-light;
+    border: 1px solid  $color-1-light;
+    border-radius: 5px;
+    max-width: 90%;
+    margin: 1em auto;
+    text-align: center;
+    color: $color-1-dark !important;
 
     #loginform {
       text-align: center;
 
         label {
           display: block;
+          font-weight: bold;
+          color: $color-1-dark !important;
         }
 
         .input {
-          border: 1px solid #ccc;
+          border-radius: 5px;
+          border: 1px solid $color-1;
+          text-align: center;
+          line-height: 2em;
         }
 
+        #wp-submit {
+          background-color: $color-1;
+          border: 1px solid $color-1;
+          border-radius: 5px;
+          color: $color-3;
+          font-weight: bold;
+          font-size: 1em;
+          padding: 0.5em;
+          cursor: pointer;
+        }
+    }
+
+    & .forgot-password {
+      color: darken(white, 50);
     }
   }
+}
+
+/*---RESPONSIVE---*/
+
+@media (min-width: 1024px) {
+  .login-page-container {
+      margin-top: 10em;
+      min-height: 75vh;
+
+      & .home-description {
+        font-size: 1em;
+        padding: 0 0 0 2.5em;
+      }
+
+      & .home-form-login {
+        padding-top: 3em;
+      }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .login-page-container {
+    margin-top: 10em;
+    min-height: 75vh;
+
+
+    & .home-description {
+      font-size: 1em;
+      padding: 2em 0 0 4em;
+    }
+
+
+  }
+
 }

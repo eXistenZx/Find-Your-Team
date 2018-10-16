@@ -1,0 +1,89 @@
+body {
+  // background-color: $color-bg-light;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+}
+.login-action-login {
+  background-color: $color-1-light;
+}
+
+.login-action-lostpassword {
+
+  background-color: $color-1-light;
+}
+
+#login {
+    width: 350px;
+
+    form {
+      background-color: $color-1;
+    }
+}
+#login h1 {
+    display: none;
+}
+
+#login .message {
+  color: $color-text-links;
+  background-color: $color-1;
+  border-left: none;
+  font-size: 1.1em;
+}
+
+.login #login_error {
+  background-color: #dc3232;
+}
+#login #loginform {
+    background-color: $color-1;
+}
+
+#login label {
+    color: white;
+    font-weight: bold;
+}
+#login .input {
+    background: #F0F0F0;
+    display: inline-block;
+    padding: 5px 8px;
+    color: #212121;
+    height: 30px;
+    font-size: 18px;
+}
+
+#nav {
+    display: none;
+}
+#backtoblog {
+    display: none;
+}
+
+
+.actions {
+    width: 350px;
+    margin: auto;
+    padding-top: 15px;
+}
+.actions #login-back {
+    float: left;
+    margin-left: 10px;
+}
+.actions #login-forget {
+    float: right;
+    margin-right: 10px;
+}
+
+.opacity {
+    // opacity:0.7;
+    //     filter: alpha(opacity = 70);
+    // -ms-filter: 'prodig:DXImageTransform.Microsoft.Alpha(Opacity=70)';
+    // -webkit-transition: opacity 0.4s ease-in-out;
+    // -moz-transition: opacity 0.4s ease-in-out;
+    // -o-transition: opacity 0.4s ease-in-out;
+    // transition: opacity 0.4s ease-in-out;
+  }
+.opacity:hover {
+    // opacity: 1; filter: alpha(opacity = 90);
+    // -ms-filter:'prodig:DXImageTransform.Microsoft.Alpha(Opacity=90)';
+    // cursor: pointer;
+}

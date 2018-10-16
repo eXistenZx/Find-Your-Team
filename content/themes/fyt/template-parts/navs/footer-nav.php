@@ -1,11 +1,14 @@
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Find Your Team</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contact</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">CGU</a>
-  </li>
-</ul>
+<a href="<?= home_url(); ?>">Accueil</a>
+<?php
+    $menuParameters = [
+      'container'       => false,
+      'echo'            => false,
+      'depth'           => 0,
+      'items_wrap'      => '%3$s',
+      'theme_location'  => 'secondary'
+    ];
+
+    $menu = wp_nav_menu($menuParameters);
+
+    echo strip_tags($menu, '<a>');
+?>

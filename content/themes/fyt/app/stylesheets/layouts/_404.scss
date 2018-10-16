@@ -1,4 +1,5 @@
 .bg-404 {
+  background: url('../images/underwater.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -11,24 +12,25 @@
   z-index: 10;
 
   .description-404 {
-    margin-top: 60vh;
+    margin-top: 20em;
 
     h1 {
-      color: white;
+      color: $color-text-links;
     }
 
     button {
-      margin-top: 30px;
+      margin-top: 2em;
       width: 350px;
-      background-color: #2599E8;
-      border: 2px solid white;
+      background-color: $color-1;
+      border: 1px solid $color-1;
+      border-radius: 5px;
       font-weight: 700;
       line-height: 1.8em;
       font-size: 1.2em;
 
       a {
         text-decoration: none;
-        color: white;
+        color: $color-text-links;
       }
     }
   }

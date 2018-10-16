@@ -1,0 +1,141 @@
+.location-container {
+  width: 95%;
+  margin: auto;
+  margin-top: 3em;
+
+    .location-details {
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 5px;
+      padding: 1em;
+
+      .location-image {
+        width: 100%;
+        text-align: center;
+         img {
+           width: 100%;
+           height: 100%;
+         }
+      }
+      .location-title {
+        text-align: center;
+        padding: 0.5em;
+      }
+
+      .location-address {
+        margin-left: 1em;
+      }
+
+      .location-map {
+        .em-location-map-container {
+          margin: 1em auto;
+        }
+      }
+
+      .location-events-title {
+        text-align: center;
+      }
+
+      ul {
+        padding-left: 0;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: $color-text-links-footer;
+            text-transform: capitalize;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .rating {
+        font-size: 2em;
+      }
+    }
+
+    .location-comments {
+      padding: 1em;
+
+      .comment-reply-title {
+        text-align: center;
+      }
+
+      .comment-form {
+        text-align: center;
+
+        .logged-in-as a:first-child {
+          color: $color-text-links-footer;
+        }
+        .logged-in-as a:last-child {
+          display: none;
+        }
+
+        .form-submit .submit {
+          background-color: $color-1;
+          border: 1px solid $color-1;
+          border-radius: 5px;
+          color: $color-text-links;
+          font-weight: bold;
+        }
+        .form-submit .submit:hover {
+          cursor: pointer;
+        }
+      }
+    }
+}
+
+@media (min-width: 768px) {
+  .location-container {
+
+    .location-details {
+    .location-image {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 2em;
+    }
+  }
+    .location-comments {
+      .comment-form-comment {
+        #comment {
+          width: 80%;
+        }
+
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .location-container {
+    width: 65%;
+    margin: 4.5em 1.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .location-container {
+    width: 70%;
+    margin: 4.5em 2em;
+
+    .location-details {
+
+          .rating {
+            font-size: 2.5em;
+          }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .location-container {
+
+    width: 75%;
+    margin: 4.5em 3em;
+
+  .location-details {
+    .location-image {
+      width: 60%;
+    }
+  }
+  }
+}

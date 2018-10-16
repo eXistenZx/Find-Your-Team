@@ -1,0 +1,15 @@
+.logo-sidebar img {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  // width: 110px;
+  bottom: 80px;
+  right: 1.2rem;
+}
+/*---RESPONSIVE---*/
+@media (min-width: 992px) {
+  .logo-sidebar img {
+ 	display: block;
+    width: 80px;
+  }
+}

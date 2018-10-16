@@ -1,0 +1,39 @@
+.comments {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 3em;
+
+  .comment-body {
+    margin-left: 2em;
+    border: 2px inset;
+    margin-top: 0.5em;
+
+    p {
+      color: mediumvioletred;
+      font-weight: 500;
+    }
+
+    .reply {
+      margin-bottom: 0.5em;
+
+      .comment-reply-link {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+  h3 {
+  margin-left: 1em;
+  margin-top: 1em;
+  text-decoration: underline;
+  font-weight: 900;
+  }
+
+  .comment-form {
+    margin-left: 2em;
+
+    .logged-in-as {
+
+    }
+  }
+}

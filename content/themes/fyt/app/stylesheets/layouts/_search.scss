@@ -1,0 +1,163 @@
+.search-container {
+  margin-top: 5em;
+
+  .search-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .search-title {
+      font-size: 1em;
+      font-weight: bold;
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    .search-form {
+      text-align: center;
+      margin: 1em;
+    }
+  }
+
+  .search-results {
+    padding: 1em;
+    margin: 1em;
+
+    .result {
+      width: 95%;
+      margin: 1em auto;
+      padding: 0.5em;
+      text-align: center;
+      background-color: $color-1-light;
+      border-radius: 5px;
+
+      .result-title {
+        font-size: 1.5em;
+      }
+    }
+
+    .empty-search-message {
+      margin: 1em auto;
+    }
+  }
+
+  .event-suggestion {
+    padding: 1em;
+    margin: 1em;
+
+    .event-suggestion-title {
+      text-align: center;
+    }
+
+    .suggestion-results {
+      width: 100%;
+
+      .suggestion {
+        width: 95%;
+        margin: 1em auto;
+        padding: 0.5em;
+        text-align: center;
+        background-color: $color-1-light;
+        border-radius: 5px;
+
+        .suggestion-title {
+          font-size: 1.5em;
+        }
+
+        .suggestion-image {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}
+/*---RESPONSIVE---*/
+@media (min-width: 768px) {
+  .search-container {
+    .search-header {
+      .search-title {
+        line-height: 4em;
+      }
+    }
+
+    .search-results {
+      width: 90%;
+      margin: 2em auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .result {
+        width: 45%;
+        margin: 1em;
+      }
+    }
+
+    .event-suggestion {
+      width: 90%;
+      margin: 2em auto;
+
+      .suggestion-results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .suggestion {
+          width: 45%;
+          margin: 1em;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .search-container {
+    .search-results {
+      padding: 2em;
+
+      .result {
+        width: 45%;
+      }
+
+      .empty-search-message {
+        text-align: left;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .search-container {
+    .search-results {
+      .result {
+        width: 30%;
+      }
+    }
+
+    .event-suggestion {
+      .suggestion-results {
+        .suggestion {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .search-container {
+    .search-results {
+      .result {
+        width: 20%;
+      }
+    }
+
+    .event-suggestion {
+      .suggestion-results {
+        .suggestion {
+          width: 20%;
+        }
+      }
+    }
+  }
+}

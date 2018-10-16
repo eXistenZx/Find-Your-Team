@@ -1,0 +1,81 @@
+.member-events-container {
+  margin: 5em auto 11em auto;
+  width: 95%;
+
+  .section-title {
+    color: $color-1;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+
+  .member-events-list {
+    width: 100%;
+    padding: 1em;
+
+    .user-events {
+      text-align: center;
+      border: 1px solid $color-1-light;
+      border-radius: 5px;
+      background-color: $color-1-light;
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 0.5em;
+
+      .user-event-title a {
+        text-decoration: none;
+      }
+
+      .user-event-date {
+        margin-bottom: 0;
+      }
+    }
+
+    .no-message {
+      margin-bottom: 13em;
+    }
+  }
+}
+/*---RESPONSIVE---*/
+@media (min-width:768px) {
+  .member-events-container {
+    .member-events-list {
+      width: 80%;
+      margin: auto;
+
+      .no-message {
+        margin-bottom: 15em;
+      }
+    }
+  }
+}
+@media (min-width:1024px) {
+  .member-events-container {
+    .member-events-list {
+      width: 60%;
+      padding: 1.5em;
+      margin: 0;
+
+      .no-message {
+        margin-bottom: 23em;
+      }
+    }
+  }
+}
+@media (min-width:1440px) {
+  .member-events-container {
+    .member-events-list {
+      width: 45%;
+    }
+  }
+}
+@media (min-width:1920px) {
+  .member-events-container {
+    .member-events-list {
+      width: 40%;
+
+      .no-message {
+        margin-bottom: 40em;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.meteo {
+  background-color: rgba(255, 255, 255, .5);
+  text-align: center;
+  margin: 20px 0 !important;
+  padding: 5px;
+  .meteo-first-line, .meteo-second-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    .meteo-card {
+      margin: 0.2em 0.6em;
+
+      h5 {
+        font-size: 0.6em;
+      }
+      h6 {
+        margin: 0 !important;
+        font-size: 0.9em;
+      }
+      p {
+        font-size: 0.8em;
+        max-width: 84px;
+
+      }
+    }
+  }
+}

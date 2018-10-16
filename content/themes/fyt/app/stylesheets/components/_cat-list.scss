@@ -1,32 +1,99 @@
 .cat-list {
+  text-align: center;
+  height: 100%;
+  margin-top: 5em;
 
-  ul {
-  padding:0;
-  margin:0;
-  list-style-type: none;
+  .em-categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
   }
 
-  .categories {
-    color: #D0DCFF;
-  }
+  .categories-list-item li, a {
+    text-decoration: none !important;
+    background-color: $color-1;
+    // border: 1px solid $color-1;
+    border-radius: 5px;
+    color: $color-text-links;
+    font-weight: bold;
+    padding: 0.3em;
+    line-height: 2em;
+    margin: 6px !important;
 
-  .cat-item a {
-    display: block;
-    float:left;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;
-    height: 25px;
-    background-color: #1AFDFF;
-    margin: 2px;
-    font-weight: 700;
 
     &:hover {
-      background-color: #2599E8;
+    color: $color-1-dark;
+    background-color: $color-1-light;
+    border: 1px solid $color-1-light;
+  }
+}
+
+  & .search-form-1 {
+    line-height: 2em;
+
+    input {
+      border: 1px solid $color-1;
+      border-right: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    #searchsubmit {
+      background-color: $color-1;
+      border: 1px solid $color-1;
+      border-left: none;
+      color: $color-text-links;
+      font-weight: bold;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
   }
-  input {
-    margin-left: 2px;
-    border: none;
+}
+
+/*---RESPONSIVE---*/
+
+@media (min-width: 768px) {
+
+.search-form-1 {
+      margin-top: 1.5em;
+    }
+}
+
+@media (min-width: 992px) {
+
+  .cat-list {
+    margin-right: 320px;
+  }
+  .search-form-1 {
+      display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .cat-list {
+    margin-right: 320px;
+
+    .cat-list-item {
+      margin-top: 1em;
+    }
+    &   .search-form-1 {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1920px) {
+
+  .cat-list {
+    margin-right: 320px;
+
+    .cat-list-item {
+      margin-top: 1em;
+    }
+    &   .search-form-1 {
+      display: none;
+    }
   }
 }

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,400,700,900');
+
 @import
-'variables/vars';
+  'variables/vars';
 
 @import
   'base/base',
@@ -8,21 +10,33 @@
 @import
   'components/cat-list',
   'components/search-form',
-  'components/create-event-form';
+  'components/comments',
+  'components/sidebar-logo',
+  'components/sidebar-meteo',
+  'components/sidebar-calendar';
 
 @import
   'layouts/404',
+  'layouts/archive',
+  'layouts/calendar',
+  'layouts/cgu',
+  'layouts/contact',
   'layouts/footer',
   'layouts/events-front-page',
   'layouts/front-page',
   'layouts/login-page',
   'layouts/header',
-  'layouts/home-page',
+  'layouts/location-page',
+  'layouts/login-page-wrong',
   'layouts/page',
+  'layouts/search',
+  'layouts/messagerie',
   'layouts/sidebar',
   'layouts/user-registration',
-  'layouts/single';
-
+  'layouts/member-account',
+  'layouts/member-events',
+  'layouts/single',
+  'layouts/user-public-profil';
 
 @import
   'shame';

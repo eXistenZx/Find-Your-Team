@@ -26,3 +26,46 @@ $form .= "</form>";
 return $form;
 }
 add_filter('get_search_form', 'custom_search');
+
+// Personnalisation des menus du BO en fonction du status de l'utilisateur
+function custom_menu_page_removing() {
+    remove_menu_page( 'edit.php' );
+    remove_menu_page( 'tools.php' );
+    if (!current_user_can('customize')) {
+        remove_menu_page( 'index.php' );
+        remove_menu_page( 'profile.php' );
+    }
+}
+add_action( 'admin_menu', 'custom_menu_page_removing' );
+
+// Si l'utilisateur courant n'est pas admin alors on enleve le lien vers son profil dans la barre admin
+function remove_admin_bar_links() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('new-content');
+    $wp_admin_bar->remove_menu('wp-logo');
+
+    if (!current_user_can('customize')) {
+        $wp_admin_bar->remove_menu('my-account');       // Remove the user details tab
+        $wp_admin_bar->remove_menu('updates');          // Remove the updates link
+    }
+}
+add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
+
+function wpb_remove_screen_options() {
+    if(!current_user_can('customize')) {
+        return false;
+    }
+    return true;
+}
+add_filter('screen_options_show_screen', 'wpb_remove_screen_options');
+
+// Affichage de l'admin bar en fonction du rôle de l'utilisateur courant
+function wpc_show_admin_bar() {
+    if(current_user_can('customize')) {
+        return false;
+    }
+    else {
+        return false;
+    }
+}
+add_filter('show_admin_bar' , 'wpc_show_admin_bar');

@@ -1,20 +1,30 @@
-// Font d'écran
-$bg-color-light: #D0DCFF;
-
 // Couleurs du site
-$color-1: #2599E8;
-$color-2: #1AFDFF;
+$color-1: #1E73BE;
+$color-1-light: lighten($color-1, 40);
+$color-1-dark: darken($color-1, 40);
+$color-2: #4FC3F7;
 $color-3: #FFFFFF;
+$color-4: #f210c1;
+
+// Font d'écran
+$color-bg-light: lighten($color-1, 50);
 
 //  Borders
 $border-color: #1B1D21;
 
 // Texte
 $text-color: #1B1D21;
+$color-text-links: #FFFFFF;
+$color-text-links-footer: black;
 
 // Polices
-$font_nunito: 'Nunito', Arial, sans-serif;
+$font_nunito: 'Nunito', sans-serif;
 $font_relaway: 'Raleway', Arial, sans-serif;
 $font_exo2: 'Exo+2', Arial, sans-serif;
 $font_roboto: 'Roboto', Arial, sans-serif;
 $font_orbitron: 'Orbitron', Arial, sans-serif;
+
+
+$color-metal: #AFAFAF;
+$color-black: black;
+$color-text: purple;

@@ -1,0 +1,31 @@
+.calendar-full {
+  width: 75%;
+  margin-top: 7em;
+  margin-left: 2em;
+
+  .em-calendar-wrapper {
+    width: 80%;
+    margin: 0 auto 6em;
+
+    .em-calendar {
+      thead td {
+        text-align: center;
+
+        .em-calnav {
+          color: $color-2;
+        }
+      }
+
+      tbody {
+        .days-names td {
+          text-align: center;
+        }
+
+        .eventless {
+          height: 8em;
+          width: 8em;
+        }
+      }
+    }
+  }
+}

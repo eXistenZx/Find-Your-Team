@@ -22,8 +22,8 @@ remove_action( 'wp_head', 'feed_links_extra', 3 );
 
 //
 // //Remove WordPress Footer Credits
-// function wpo_remove_footer_admin() {
-// 	return 'Powered by Find Your Team';
-//   echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Designed by <a href="http://www.pierre-tordjman.com" target="_blank">Pierre Quentin Niko et Vito, les artistes de Wordpress</a>';
-// }
-// add_filter('admin_footer_text', 'wpo_remove_footer_admin');
+function wpo_remove_footer_admin() {
+	return 'Powered by Find Your Team';
+  // echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Designed by <a href="http://www.pierre-tordjman.com" target="_blank">Pierre Quentin Niko et Vito, les artistes de Wordpress</a>';
+}
+add_filter('admin_footer_text', 'wpo_remove_footer_admin');

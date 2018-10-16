@@ -1,7 +1,4 @@
-<?php get_header(); ?>
-
-
-<?php echo 'Bonjour';?>
-
-
-<?php get_footer(); ?>
+<?php
+    get_header();
+        echo 'Bonjour';
+    get_footer();

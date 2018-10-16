@@ -1,15 +1,80 @@
-.card{
-
-  text-align: -webkit-center;
+.event-card{
   margin-top: 5em;
-  width: max-content;
-  background: none;
-  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0px;
 
 }
 
+.textarea {
+  margin-bottom: 10em;
+  margin-left: 25em;
+}
 
+.cercle {
+  margin-bottom: 2em;
+}
 
+.cercle1 {
+  display: flex;
+  color: white;
+  width: 115px;
+  height: 115px;
+  margin: 25px auto 0;
+  background-color: #0159b3;
+  border-radius: 50%;
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+
+  }
+
+.cercle2 {
+  display: flex;
+  color: white;
+  width: 175px;
+  height: 175px;
+  margin: 25px auto 0;
+  background-color: #0159b3;
+  border-radius: 50%;
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+
+  }
+
+.cercle3 {
+  display: flex;
+  color: white;
+  width: 215px;
+  height: 215px;
+  margin: 25px auto 0;
+  background-color: #0159b3;
+  border-radius: 50%;
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+  background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.2) 0%, transparent 100%);
+
+  }
+
+b.cercle1, .cercle2, .cercle3 {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#eventMap {
+  width: 100%;
+  height: 22em;
+}
 
 
 
@@ -18,9 +83,11 @@
 */
 		.rating {
 			width: 226px;
-			margin: 0 auto 1em;
+			margin: 0 1em 1em;
+      margin-bottom: 10px;
 			font-size: 45px;
 			overflow:hidden;
+      text-align: center;
 		}
 		.rating a {
 			float:right;
@@ -42,5 +109,5 @@
 			direction: rtl;
 		}
 		.rating2 a {
-			float:none
+			float:none;
 		}

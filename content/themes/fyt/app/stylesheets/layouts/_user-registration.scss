@@ -1,14 +1,70 @@
 .user-registration-container {
-  margin: 10em auto;
+  margin: 5em auto;
 
   .form-title {
     margin-bottom: 1em;
   }
+  .register-form {
 
-  .label-email {
-    margin-right: 1em;
-    margin-bottom: 0;
-    margin-top: 0.5em;
-    line-height: 1em;
+    #text-input-mail {
+      display: none;
+    }
+    #domain-input-mail {
+      width: 6em;
+    }
+    .input-group-text {
+      width: 7.5em;
+      text-align: center;
+    }
+
+    .btn-success {
+      background-color: $color-1;
+      border: 1px solid $color-1;
+      font-weight: bold;
+    }
+  }
+}
+ /*---RESPONSIVE---*/
+
+ @media (min-width: 768px) {
+    .user-registration-container {
+
+      & .register-form {
+        margin-bottom: 0;
+
+        #text-input-mail {
+          display: block;
+        }
+      }
+    }
+ }
+
+@media (min-width: 1024px) {
+
+  .user-registration-container {
+    margin-top: 8em;
+
+    & .register-form {
+      margin-bottom: 20%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .user-registration-container {
+
+    & .register-form {
+      margin-bottom: 13%;
+    }
+  }
+}
+@media (min-width: 1440px) {
+
+  .user-registration-container {
+
+    & .register-form {
+      margin-bottom: 15%;
+    }
   }
 }

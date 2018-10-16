@@ -15,11 +15,9 @@ exports.files = {
 };
 
 exports.plugins = {
-    // sass: {
-    //     options: {
-    //         includePaths: ['node_modules/font-awesome/scss']
-    //     }
-    // },
+    sass: {
+        precision: 8
+    },
     browserSync: {
         files: [
             '*'
@@ -40,7 +38,7 @@ exports.npm = {
     globals: {
       '$': 'jquery', // $ = jquery
       'jQuery': 'jquery', // jQuery = jquery
-      // 'jarallax': 'jarallax', // On déclare en global le fichier JS de Jarallax 
+      // 'jarallax': 'jarallax', // On déclare en global le fichier JS de Jarallax
       'bootstrap': 'bootstrap' // on déclare en global le fichier JS de Bootstrap globalement
     }
 }

@@ -1,0 +1,47 @@
+.cgu-container {
+  margin: 5em 1em 3em 1em;
+
+  .cgu-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .cgu-content {
+    padding: 0.5em 0;
+  }
+}
+
+/*---RESPONSIVE---*/
+
+@media (min-width: 768px) {
+  .cgu-container {
+    .cgu-content {
+      padding: 0.5em 1em;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .cgu-container {
+    width: 90%;
+    margin: 5em auto 3em auto;
+    .cgu-content {
+      padding: 1em 2em;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .cgu-container {
+    width: 80%;
+    margin: 5em auto 3em auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cgu-container {
+    width: 70%;
+    margin: 5em auto 3em auto;
+  }
+}

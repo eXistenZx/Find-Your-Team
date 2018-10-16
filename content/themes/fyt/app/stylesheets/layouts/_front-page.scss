@@ -1,39 +1,12 @@
-.front-page-container {
-  margin: 3em auto 3em auto;
-  position: relative;
-  height: 100px;
+.container-fluid {
+  margin-top: 3em;
 
 }
 
 /*---RESPONSIVE---*/
 
-@media (min-width: 320px) {
-
-  .front-page-container {
-    margin-top: 5em;
-
-    & .home-form-login {
-      margin: 0 0.5em;
-      padding: 1em;
-    }
-  }
-}
-@media (min-width: 525px) {
-
-  .front-page-container {
-    margin-top: 5em;
-  }
-}
-@media (min-width: 768px) {
-
-  .front-page-container {
-    margin-top: 5em;
-  }
-}
-
 @media (min-width: 1024px) {
-
-  .front-page-container {
+  .container-fluid {
     margin-top: 5em;
   }
 }
